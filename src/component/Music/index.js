@@ -1,7 +1,59 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import "./style.css";
+// import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+const BASE_URL = "http://localhost:4000";
 
-const Music = () => {
-  return <div>Music</div>;
-};
+function Music() {
+  const [music, setMusic] = useState([]);
+  let navigate = useNavigate();
+
+  useEffect(() => {
+    getAllMusic();
+  }, []);
+
+  const getAllMusic = async () => {
+    const music = await axios.get(`${BASE_URL}/Music`);
+
+    setMusic(music.data);
+  };
+
+  const goInside = (id) => {
+    console.log(id);
+    navigate(`/Music/${id}`);
+  };
+  const addFav = () => {
+    //inside users
+  };
+
+  return (
+    <div className="allMusic">
+      {music.map((music) => {
+        return (
+          <div className="oneMusic">
+            <div
+              onClick={() => {
+                goInside(music.trackId);
+              }}
+            >
+              <img src={music.artworkUrl100} alt="music" />
+              <div>
+                <button
+                  onClick={() => {
+                    addFav(music.trackId);
+                  }}
+                >
+                  Add to Favorite
+                </button>{" "}
+              </div>
+              <h5> {music.trackName} </h5>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
 
 export default Music;
