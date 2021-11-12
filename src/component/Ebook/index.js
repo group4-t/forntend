@@ -1,7 +1,7 @@
 import React from "react";
 
 const Ebook = () => {
-  return <div></div>;
+  return <div> ebook </div>;
 };
 
 export default Ebook;

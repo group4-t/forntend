@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 
 const Home = () => {
-  return <div></div>;
+  return <div> home </div>;
 };
 
 export default Home;
