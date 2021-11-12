@@ -23,8 +23,8 @@ function Movies() {
     console.log(id);
     navigate(`/Movie/${id}`);
   };
-  const addFav = () => {
-    //inside users
+  const addFav = (id) => {
+    console.log(id);
   };
 
   return (
@@ -38,7 +38,10 @@ function Movies() {
               }}
             >
               <img src={movie.artworkUrl100} alt="movie" />
-              <div>
+             
+              <h5> {movie.trackName} </h5>
+            </div>
+            <div>
                 <button
                   onClick={() => {
                     addFav(movie.trackId);
@@ -47,8 +50,6 @@ function Movies() {
                   Add to Favorite
                 </button>{" "}
               </div>
-              <h5> {movie.trackName} </h5>
-            </div>
           </div>
         );
       })}

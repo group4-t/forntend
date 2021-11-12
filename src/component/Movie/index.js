@@ -25,9 +25,10 @@ const Movie = () => {
     return (<>
   {movie ? <div className="oneitem">
         {movie.trackName}
-        {/* <video width="320" height="240" controls> <source src= {movie.artistViewUrl} type="video/mp4" />
+        <video width="320" height="240" controls> <source src= {movie.trackViewUrl} type="video/mp4" />
+        {console.log(movie.trackViewUrl)}
   Your browser does not support the video tag.
-</video> */}
+</video>
         {/* <img src= {movie.artworkUrl100} alt="movie" /> */}
 
       </div>:<h1>loading ...</h1>}
