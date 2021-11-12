@@ -9,6 +9,9 @@ import User from "./component/User";
 import "./App.css";
 import Movies from "./component/Movies";
 import Movie from "./component/Movie";
+import OnePodcast from "./component/onepodcast";
+import Home from "./component/Home";
+
 // import axios from "axios";
 
 const App = () => {
@@ -17,6 +20,7 @@ const App = () => {
       <Nav />
 
       <Routes>
+      <Route exact path="/" element={<Home />} />
         <Route exact path="/Music" element={<Music />} />
         <Route exact path="/Podcast" element={<Podcast />} />
         <Route exact path="/Movies" element={<Movies />} />
@@ -24,6 +28,7 @@ const App = () => {
         <Route exact path="/Fav" element={<Fav />} />
         <Route exact path="/user" element={<User />} />
         <Route exact path="/Movie/:trackId" element={<Movie />} />
+        <Route exact path="/Podcast/:trackId" element={<OnePodcast />} />
       </Routes>
     </>
   );
