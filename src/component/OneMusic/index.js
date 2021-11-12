@@ -13,7 +13,7 @@ const OneMusic = () => {
   const [onemusic, setOneMusic] = useState("");
 
   const getOneMusic = async () => {
-    const bigobj = await axios.get(`${BASE_URL}/music`);
+    const bigobj = await axios.get(`${BASE_URL}/Music`);
     setOneMusic(bigobj.data.find((element) => element.trackId == id));
   };
 
@@ -25,7 +25,7 @@ const OneMusic = () => {
     <>
       {OneMusic ? (
         <div className="oneitem">
-          {OneMusic.trackName}
+          {onemusic.trackName}
           {/* <video width="320" height="240" controls> <source src= {movie.artistViewUrl} type="video/mp4" />
   Your browser does not support the video tag.
 </video> */}

@@ -39,18 +39,18 @@ function Movies() {
               }}
             >
               <img src={movie.artworkUrl100} alt="movie" />
-             
+
               <h5> {movie.trackName} </h5>
             </div>
             <div>
-                <button
-                  onClick={() => {
-                    addFav(movie.trackId);
-                  }}
-                >
-                  Add to Favorite
-                </button>{" "}
-              </div>
+              <button
+                onClick={() => {
+                  addFav(movie.trackId);
+                }}
+              >
+                Add to Favorite
+              </button>{" "}
+            </div>
           </div>
         );
       })}

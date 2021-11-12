@@ -1,0 +1,33 @@
+.ulNav {
+    /* display: inline-block; */
+    display: flex;
+    justify-content: center;
+   /* margin-top: 15px; */
+   padding-top: 20px;
+   padding-bottom: 20px;
+   background-color: black;
+}
+
+.nav{
+    background-color: black;
+}
+
+/* #firstli{
+    margin-left: 3%;
+} */
+
+.ulNav li {
+margin-left: 7%;
+list-style: none;
+text-decoration: none;
+color: black;
+
+}
+
+
+.linkk{
+text-decoration: none;
+color: rgb(255, 255, 255);
+
+    
+    }
