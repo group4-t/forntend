@@ -1,7 +1,7 @@
 import React from "react";
 
 const Podcast = () => {
-  return <div></div>;
+  return <div>Podcast</div>;
 };
 
 export default Podcast;

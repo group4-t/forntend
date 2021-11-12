@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes, BrowserRouter } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Nav from "./component/Nav";
 import Music from "./component/Music";
 import Podcast from "./component/Podcast";
@@ -12,9 +12,9 @@ import "./App.css";
 
 const App = () => {
   return (
-    // <>
-    /* <Nav /> */
-    <BrowserRouter>
+    <>
+      <Nav />
+
       <Routes>
         <Route exact path="/Music" element={<Music />} />
         <Route exact path="/Podcast" element={<Podcast />} />
@@ -23,8 +23,7 @@ const App = () => {
         <Route exact path="/Fav" element={<Fav />} />
         <Route exact path="/user" element={<User />} />
       </Routes>
-    </BrowserRouter>
-    // </>
+    </>
   );
 };
 export default App;
