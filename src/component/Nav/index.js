@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import "./style.css";
 import head from "./../../imges/head.png";
 
+
 const Nav = () => {
   return (
     <div className="nav">
@@ -33,15 +34,13 @@ const Nav = () => {
             Movies
           </Link>
         </li>
-        {/* <li>
-          <Link  className="linkk" to="/Ebook">Ebooks</Link>
-        </li> */}
-        {/* <li>
+       
+        <li className="lii">
           <Link className="linkk" to="/Fav">Favorite</Link>
         </li>
-        <li>
+        <li className="lii">
           <Link  className="linkk" to="/User">User</Link>
-        </li> */}
+        </li>
       </ul>
     </div>
   );

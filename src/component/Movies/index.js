@@ -3,7 +3,7 @@ import axios from "axios";
 import "./style.css";
 import { useNavigate } from "react-router-dom";
 // import { useHistory } from "react-router-dom";
-
+import { AiOutlineHeart } from 'react-icons/ai';
 const BASE_URL = "http://localhost:4000";
 
 function Movies() {
@@ -32,6 +32,7 @@ function Movies() {
     <div className="allMovies">
       {movies.map((movie) => {
         return (
+          <>
           <div
             onClick={() => {
               goInside(movie.trackId);
@@ -52,7 +53,11 @@ function Movies() {
               </button>{" "} */}
             </div>
           </div>
+          <p>
+          <AiOutlineHeart/></p>
+          </>
         );
+        
       })}
     </div>
   );
