@@ -4,6 +4,7 @@ import "./style.css";
 import head from "./../../imges/head.png";
 import React from "react";
 
+
 const Nav = () => {
 
   
@@ -35,6 +36,10 @@ const Nav = () => {
             Movies
           </Link>
         </li>
+
+       
+        <li className="lii">
+
         <li className="lii">
           <Link className="linkk" to="/search">
             Search
@@ -45,11 +50,12 @@ const Nav = () => {
           <Link  className="linkk" to="/Ebook">Ebooks</Link>
         </li> */}
         {/* <li>
+
           <Link className="linkk" to="/Fav">Favorite</Link>
         </li>
-        <li>
+        <li className="lii">
           <Link  className="linkk" to="/User">User</Link>
-        </li> */}
+        </li>
       </ul>
     </div>
   );

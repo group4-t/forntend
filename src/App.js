@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Nav from "./component/Nav";
@@ -13,16 +12,20 @@ import Movies from "./component/Movies";
 import Movie from "./component/Movie";
 import OnePodcast from "./component/onepodcast";
 import Home from "./component/Home";
+
 import Search from "./component/Search";
 import OneMusic from  "./component/OneMusic";
+
 import HomeItem from "./component/homeItem/homeItem";
 // import axios from "axios";
+import "./App.css";
 
 const App = () => {
   return (
     <>
       <Nav />
       {/* >>>>>>> 1e3c1e70b26cb15df472e9ffa1de8844ab086d6a */}
+
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/Music" element={<Music />} />
@@ -39,6 +42,7 @@ const App = () => {
 
         <Route exact path="/Podcast/:trackId" element={<OnePodcast />} />
       </Routes>
+
       <Footer />
     </>
   );
