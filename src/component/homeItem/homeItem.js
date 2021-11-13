@@ -16,6 +16,7 @@ const HomeItem = () => {
     seTopp(bigobj.data.find((element) => element.trackId == id));
   };
 
+  //d
   useEffect(() => {
     getAllItem();
   }, []);

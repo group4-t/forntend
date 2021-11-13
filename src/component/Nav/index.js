@@ -37,20 +37,14 @@ const Nav = () => {
           </Link>
         </li>
 
-       
-        <li className="lii">
 
         <li className="lii">
           <Link className="linkk" to="/search">
             Search
           </Link>
         </li>
-        
-        {/* <li>
-          <Link  className="linkk" to="/Ebook">Ebooks</Link>
-        </li> */}
-        {/* <li>
-
+  
+<li className="lii">
           <Link className="linkk" to="/Fav">Favorite</Link>
         </li>
         <li className="lii">
