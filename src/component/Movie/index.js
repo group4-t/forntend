@@ -34,7 +34,8 @@ const Movie = () => {
             Your browser does not support the video tag.
           </video> */}
           <img src={movie.artworkUrl100} alt="" />
-          <h6> main character: {movie.artistName}</h6>
+          <h6 className="hhh"> main character: {movie.artistName}</h6>
+          <h5 className="h5space">g</h5>
         </div>
       ) : (
         <h1>loading ...</h1>

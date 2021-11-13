@@ -12,9 +12,9 @@ import Movies from "./component/Movies";
 import Movie from "./component/Movie";
 import OnePodcast from "./component/onepodcast";
 import Home from "./component/Home";
-
+import SearchItem from "./component/SearchItem";
 import Search from "./component/Search";
-import OneMusic from  "./component/OneMusic";
+import OneMusic from "./component/OneMusic";
 
 import HomeItem from "./component/homeItem/homeItem";
 // import axios from "axios";
@@ -35,7 +35,7 @@ const App = () => {
         <Route exact path="/Fav" element={<Fav />} />
         <Route exact path="/user" element={<User />} />
         <Route exact path="/search" element={<Search />} />
-
+        <Route exact path="/search/:trackId" element={<SearchItem />} />
         <Route exact path="/Music/:trackId" element={<OneMusic />} />
         <Route exact path="/Movie/:trackId" element={<Movie />} />
         <Route exact path="/:trackId" element={<HomeItem />} />
