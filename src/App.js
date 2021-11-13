@@ -14,6 +14,7 @@ import Movie from "./component/Movie";
 import OnePodcast from "./component/onepodcast";
 import Home from "./component/Home";
 import OneMusic from  "./component/OneMusic";
+import HomeItem from "./component/homeItem/homeItem";
 // import axios from "axios";
 
 const App = () => {
@@ -31,7 +32,7 @@ const App = () => {
         <Route exact path="/user" element={<User />} />
         <Route exact path="/Music/:trackId" element={<OneMusic />} />
         <Route exact path="/Movie/:trackId" element={<Movie />} />
-
+        <Route exact path="/:trackId" element={<HomeItem />} />
    
         <Route exact path="/Podcast/:trackId" element={<OnePodcast />} />
 

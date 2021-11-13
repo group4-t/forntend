@@ -1,9 +1,32 @@
 .footer {
   color: white;
-  background-color: #4b4a4a;
-  padding-top: 3em;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+  background-color: #00000023;
+  padding: 10px 0;
+  /* padding-top: 3em; */
+  /* position: absolute;
+  bottom: 0; */
+  /* width: 100%; */
 }
 
+.footer ul {
+  display: flex;
+  justify-content: center;
+}
+
+.footer ul li {
+  list-style: none;
+}
+
+#secondLiFooter {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.footer ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+}
+
+/* .icon{
+font-size: 18px;
+} */

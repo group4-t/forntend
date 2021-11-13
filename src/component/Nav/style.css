@@ -8,9 +8,9 @@
    background-color: black;
 }
 
-.nav{
+/* .nav{
     background-color: black;
-}
+} */
 
 /* #firstli{
     margin-left: 3%;
@@ -21,6 +21,7 @@ margin-left: 7%;
 list-style: none;
 text-decoration: none;
 color: black;
+font-size: 18px;
 
 }
 

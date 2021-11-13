@@ -1,0 +1,19 @@
+.oneitemHome p {
+  margin-top: 30px;
+  font-size: 50px;
+}
+
+.oneitemHome {
+  text-align: center;
+  align-items: center;
+}
+
+.oneitemHome img {
+  margin-top: 30px;
+  width: 250px;
+}
+
+.oneitemHome h6 {
+  margin-top: 30px;
+  font-size: 30px;
+}

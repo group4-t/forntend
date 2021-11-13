@@ -1,21 +1,31 @@
 import React from "react";
 import "./style.css";
+import { FaTwitter } from "react-icons/fa";
+import { AiFillInstagram, AiFillGithub } from "react-icons/ai";
 
 function Footer() {
   return (
     <div className="footer">
-      <h2>about Spotify</h2>
-      <p>
-        The largest site in the Middle East to watch videos, read books, listen
-        to songs, and podcasts
-      </p>
-      <hr />
-      <div>
-        <p>
-          © 2021. All Rights Reserved | Privacy Policy | Web Design by grup (4)
-        </p>
-      </div>
-      <hr />
+      <ul>
+        <li>
+          <a href="">
+            {" "}
+            <FaTwitter className="icon" /> Twitter{" "}
+          </a>
+        </li>
+        <li id="secondLiFooter">
+          <a href="">
+            {" "}
+            <AiFillInstagram className="icon" /> Instagram{" "}
+          </a>
+        </li>
+        <li id="lastLifooter">
+          <a href="https://github.com/dorrahsq">
+            {" "}
+            <AiFillGithub className="icon" /> GitHub{" "}
+          </a>
+        </li>
+      </ul>
     </div>
   );
 }
