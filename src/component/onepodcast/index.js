@@ -25,12 +25,11 @@ const OnePodcast = () => {
   return (
     <>
       {podcast ? (
-        <div className="oneitem">
-          {podcast.trackName}
-          {/* <video width="320" height="240" controls> <source src= {movie.artistViewUrl} type="video/mp4" />
-  Your browser does not support the video tag.
-</video> */}
-          {/* <img src= {movie.artworkUrl100} alt="movie" /> */}
+        <div className="oneitemMusic">
+          <div className="blackBackgroundMusic"> h</div>
+          <p className="musicP"> {podcast.trackName}</p>
+          <img src={podcast.artworkUrl100} alt="movie" />
+          <h6> by: {podcast.artistName}</h6>
         </div>
       ) : (
         <h1>loading ...</h1>

@@ -32,14 +32,16 @@ function Movies() {
     <div className="allMovies">
       {movies.map((movie) => {
         return (
-          <div onClick={() => {
-            goInside(movie.trackId);
-          }} className="oneMovie">
-           
-              <img src={movie.artworkUrl100} alt="movie" />
+          <div
+            onClick={() => {
+              goInside(movie.trackId);
+            }}
+            className="oneMovie"
+          >
+            <img src={movie.artworkUrl100} alt="movie" />
 
-              <h5> {movie.trackName} </h5>
-         
+            <h5> {movie.trackName} </h5>
+
             <div>
               {/* <button
                 onClick={() => {
