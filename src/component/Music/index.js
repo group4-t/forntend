@@ -28,27 +28,24 @@ function Music() {
   };
 
   return (
-    <div className="allMusic">
+    <div className="allMovies">
       {music.map((music) => {
         return (
-          <div className="oneMusic">
-            <div
-              onClick={() => {
-                goInside(music.trackId);
-              }}
-            >
+          <div   onClick={() => {
+            goInside(music.trackId);
+          }} className="oneMovie">
+          
               <img src={music.artworkUrl100} alt="music" />
               <div>
-                <button
+                {/* <button
                   onClick={() => {
                     addFav(music.trackId);
                   }}
                 >
                   Add to Favorite
-                </button>{" "}
+                </button>{" "} */}
               </div>
               <h5> {music.trackName} </h5>
-            </div>
           </div>
         );
       })}

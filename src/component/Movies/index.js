@@ -32,24 +32,22 @@ function Movies() {
     <div className="allMovies">
       {movies.map((movie) => {
         return (
-          <div className="oneMovie">
-            <div
-              onClick={() => {
-                goInside(movie.trackId);
-              }}
-            >
+          <div onClick={() => {
+            goInside(movie.trackId);
+          }} className="oneMovie">
+           
               <img src={movie.artworkUrl100} alt="movie" />
 
               <h5> {movie.trackName} </h5>
-            </div>
+         
             <div>
-              <button
+              {/* <button
                 onClick={() => {
                   addFav(movie.trackId);
                 }}
               >
                 Add to Favorite
-              </button>{" "}
+              </button>{" "} */}
             </div>
           </div>
         );
