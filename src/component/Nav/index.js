@@ -20,7 +20,7 @@ const Nav = () => {
 
         <li className="lii">
           <Link className="linkk" to="/Music">
-            Musics
+            Music
           </Link>
         </li>
         <li className="lii">

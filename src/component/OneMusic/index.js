@@ -29,7 +29,13 @@ const OneMusic = () => {
           {/* <video width="320" height="240" controls> <source src= {movie.artistViewUrl} type="video/mp4" />
   Your browser does not support the video tag.
 </video> */}
-          {/* <img src= {movie.artworkUrl100} alt="movie" /> */}
+          <img src= {onemusic.artworkUrl100} alt="movie" />
+
+<audio controls>
+  <source src={onemusic.previewUrl}  type="audio/x-m4a"/>
+Your browser does not support the audio element.
+</audio>
+{console.log(onemusic.previewUrl)}
         </div>
       ) : (
         <h1>loading ...</h1>
