@@ -4,7 +4,7 @@ import photo from "./../../imges/last.jpeg";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
-const BASE_URL = "http://localhost:4000";
+const BASE_URL = "https://backend-tw.herokuapp.com";
 
 const Home = () => {
   const [top, setTop] = useState([]);

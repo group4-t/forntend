@@ -10,10 +10,12 @@
   display: flex;
   justify-content: space-between;
 }
+
 h1 {
   margin-top: 10px;
   padding-left: 30%;
   font-family: fantasy;
+  font-size: 30px;
 }
 
 .liiFirst {
