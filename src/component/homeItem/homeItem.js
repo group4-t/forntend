@@ -24,7 +24,7 @@ const HomeItem = () => {
     <>
       {topp ? (
         <div className="oneitemHome">
-            <div className="blackBackground"> h</div>
+          <div className="blackBackground"> h</div>
           <p className="homeP"> {topp.trackName}</p>
           <img src={topp.artworkUrl100} alt="" />
 

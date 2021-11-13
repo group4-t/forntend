@@ -31,21 +31,23 @@ function Music() {
     <div className="allMovies">
       {music.map((music) => {
         return (
-          <div   onClick={() => {
-            goInside(music.trackId);
-          }} className="oneMovie">
-          
-              <img src={music.artworkUrl100} alt="music" />
-              <div>
-                {/* <button
+          <div
+            onClick={() => {
+              goInside(music.trackId);
+            }}
+            className="oneMovie"
+          >
+            <img src={music.artworkUrl100} alt="music" />
+            <div>
+              {/* <button
                   onClick={() => {
                     addFav(music.trackId);
                   }}
                 >
                   Add to Favorite
                 </button>{" "} */}
-              </div>
-              <h5> {music.trackName} </h5>
+            </div>
+            <h5> {music.trackName} </h5>
           </div>
         );
       })}
