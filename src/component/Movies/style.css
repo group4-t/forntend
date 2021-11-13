@@ -5,21 +5,15 @@
   align-items: center;
   margin-top: 40px;
 }
-/*   
-  .allMovies:hover{
-   cursor: pointer;
-   
-  }  */
+
 .oneMovie {
   width: 320px;
   height: 400px;
-  /* margin: 20px; */
   padding: 10px;
   padding-bottom: 100px;
   margin: 40px 50px 0px 50px;
   transition: 0.5s ease;
-  /* background-color: rgba(218, 218, 218, 0.151);
-  border-radius: 10px; */
+
   text-align: center;
 }
 
@@ -36,9 +30,7 @@
 }
 
 .allMovies div img {
-  /* margin-top: 30px; */
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  /* border: 1px solid rgb(0, 0, 0); */
 }

@@ -31,16 +31,12 @@ const Home = () => {
     navigate(`/${id}`);
   };
 
-  // top.filter((ele)=>{
-  // let maxEle = Math.max(ele.trackCount);
-  // return maxEle
-  // })
   return (
     <div>
       <div>
         <img className="backImg" src={photo} />
       </div>
-      <h2 className="h2header"> With ......, </h2>
+      <h2 className="h2header"> With SkyTunes </h2>
       <h4 className="headerText">
         {" "}
         you can find the Latest and Trending songs, <br /> podcast,movies and
@@ -73,7 +69,7 @@ const Home = () => {
           <img src={firstt.artworkUrl100} alt="movie" />
           <h6 className="topName"> {firstt.trackName} </h6>{" "}
         </div>
-        {/* {firstt.trackCount}  */}
+
         <div
           onClick={() => {
             goInside(secondd.trackId);
@@ -84,7 +80,7 @@ const Home = () => {
           <img src={secondd.artworkUrl100} alt="movie" />
           <h6 className="topName"> {secondd.trackName} </h6>{" "}
         </div>
-        {/* {secondd.trackCount} */}
+
         <div
           onClick={() => {
             goInside(thirdd.trackId);
@@ -94,7 +90,6 @@ const Home = () => {
           <img src={thirdd.artworkUrl100} alt="movie" />
           <h6 className="topName"> {thirdd.trackName} </h6>{" "}
         </div>
-        {/* {thirdd.trackCount} */}
       </div>
     </div>
   );

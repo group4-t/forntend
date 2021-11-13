@@ -1,17 +1,20 @@
 .ulNav {
-  /* display: inline-block; */
   display: flex;
   justify-content: center;
-  /* margin-top: 15px; */
   padding-top: 20px;
   padding-bottom: 20px;
-    background-color: rgb(255, 255, 255);
-  /* background-color: rgba(177, 177, 177, 0.137); */
+  background-color: rgb(255, 255, 255);
+  margin-right: 10%;
 }
-
-/* .nav{
-    background-color: black;
-} */
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+h1 {
+  margin-top: 10px;
+  padding-left: 30%;
+  font-family: fantasy;
+}
 
 .liiFirst {
   margin-left: 8px;
@@ -29,23 +32,13 @@
   font-size: 18px;
 }
 
-/* .ulNav li {
-margin-left: 13%;
-list-style: none;
-text-decoration: none;
-color: black;
-font-size: 18px;
-
-} */
-
 .linkk {
   text-decoration: none;
   color: rgb(0, 0, 0);
-
 }
 
-.linkk:hover{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-weight: 700;
-  }
+.linkk:hover {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+}

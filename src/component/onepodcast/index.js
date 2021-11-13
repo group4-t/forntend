@@ -8,8 +8,6 @@ const BASE_URL = "http://localhost:4000";
 
 const OnePodcast = () => {
   const id = useParams().trackId;
-  // trackId or id ?
-  // console.log(id);
   const [podcast, setpodcast] = useState("");
 
   const getPodcast = async () => {
