@@ -31,21 +31,22 @@ function Podcast() {
     <div className="allMovies">
       {podcast.map((onepodcast) => {
         return (
-          <div className="oneMovie">
-            <div
-              onClick={() => {
-                goInside(onepodcast.trackId);
-              }}
-            >
+          <div
+            onClick={() => {
+              goInside(onepodcast.trackId);
+            }}
+            className="oneMovie"
+          >
+            <div>
               <img src={onepodcast.artworkUrl100} alt="movie" />
               <div>
-                <button
+                {/* <button
                   onClick={() => {
                     addFav(onepodcast.trackId);
                   }}
                 >
                   Add to Favorite
-                </button>{" "}
+                </button>{" "} */}
               </div>
               <h5> {onepodcast.trackName} </h5>
             </div>

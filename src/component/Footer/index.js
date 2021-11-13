@@ -20,7 +20,7 @@ function Footer() {
           </a>
         </li>
         <li id="lastLifooter">
-          <a href="https://github.com/dorrahsq">
+          <a href="https://github.com/group4-t">
             {" "}
             <AiFillGithub className="icon" /> GitHub{" "}
           </a>

@@ -8,33 +8,40 @@ const Nav = () => {
   return (
     <div className="nav">
       <ul className="ulNav">
-
-      {/* <li>
+        {/* <li>
       <img src={head} alt="logo" />
         </li> */}
 
-      <li>
-          <Link id="firstli" className="linkk" to="/">Home</Link>
+        <li className="liiFirst">
+          <Link id="firstli" className="linkk" to="/">
+            Home
+          </Link>
         </li>
 
-        <li>
-          <Link className="linkk" to="/Music">Music</Link>
+        <li className="lii">
+          <Link className="linkk" to="/Music">
+            Musics
+          </Link>
         </li>
-        <li>
-          <Link className="linkk" to="/Podcast">Podcast</Link>
+        <li className="lii">
+          <Link className="linkk" to="/Podcast">
+            Podcasts
+          </Link>
         </li>
-        <li>
-          <Link className="linkk" to="/Movies">Movies</Link>
+        <li className="lii">
+          <Link className="linkk" to="/Movies">
+            Movies
+          </Link>
         </li>
-        <li>
-          <Link  className="linkk" to="/Ebook">Ebook</Link>
-        </li>
-        <li>
+        {/* <li>
+          <Link  className="linkk" to="/Ebook">Ebooks</Link>
+        </li> */}
+        {/* <li>
           <Link className="linkk" to="/Fav">Favorite</Link>
         </li>
         <li>
           <Link  className="linkk" to="/User">User</Link>
-        </li>
+        </li> */}
       </ul>
     </div>
   );
