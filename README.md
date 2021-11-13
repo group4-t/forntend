@@ -16,9 +16,9 @@ by using cmmands lines in VS code terminal.
 
 ---
 
-we made a components that contains several direcories
-`Ebook` `Fav` `Footer` `Home` `HomeItem` `Movie` `Movies` `Music` `Nav` `OneMusic` `onepodcast` `Podcast` and `User`
+- We made a components that contains several direcories
+  `Ebook`, `Fav`, `Footer`, `Home`, `HomeItem`, `Movie`, `Movies`, `Music`, `Nav`, `OneMusic`, `onepodcast`, `Podcast` and `User` .
 
-After that we are ready to write the first line in our project .. starting from `App.js` wtich is the main file..
+- After that we are ready to write the first line in our project .. starting from `App.js` wtich is the main file..
 
-finally on the Terminal we wrot `npm start` to show what we made in browser ....
+- Finally on the Terminal we wrot `npm start` to show what we made in browser ....
