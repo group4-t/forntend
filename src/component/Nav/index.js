@@ -1,11 +1,13 @@
-import React from "react";
 import { Link } from "react-router-dom";
 // import { useNavigate } from 'react-router';
 import "./style.css";
 import head from "./../../imges/head.png";
+import React from "react";
 
 
 const Nav = () => {
+
+  
   return (
     <div className="nav">
       <ul className="ulNav">
@@ -34,8 +36,21 @@ const Nav = () => {
             Movies
           </Link>
         </li>
+
        
         <li className="lii">
+
+        <li className="lii">
+          <Link className="linkk" to="/search">
+            Search
+          </Link>
+        </li>
+        
+        {/* <li>
+          <Link  className="linkk" to="/Ebook">Ebooks</Link>
+        </li> */}
+        {/* <li>
+
           <Link className="linkk" to="/Fav">Favorite</Link>
         </li>
         <li className="lii">
