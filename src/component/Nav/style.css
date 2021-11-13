@@ -5,7 +5,8 @@
   /* margin-top: 15px; */
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: black;
+    background-color: rgb(255, 255, 255);
+  /* background-color: rgba(177, 177, 177, 0.137); */
 }
 
 /* .nav{
@@ -39,5 +40,12 @@ font-size: 18px;
 
 .linkk {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+
 }
+
+.linkk:hover{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+  }
