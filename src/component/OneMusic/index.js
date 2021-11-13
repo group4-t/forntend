@@ -8,8 +8,6 @@ const BASE_URL = "http://localhost:4000";
 
 const OneMusic = () => {
   const id = useParams().trackId;
-  // trackId or id ?
-  // console.log(id);
   const [onemusic, setOneMusic] = useState("");
 
   const getOneMusic = async () => {
@@ -27,9 +25,6 @@ const OneMusic = () => {
         <div className="oneitemMusic">
           <div className="blackBackgroundMusic"> h</div>
           <p className="musicP"> {onemusic.trackName}</p>
-          {/* <video width="320" height="240" controls> <source src= {movie.artistViewUrl} type="video/mp4" />
-  Your browser does not support the video tag.
-</video> */}
           <img src={onemusic.artworkUrl100} alt="movie" />
           <h6> by: {onemusic.artistName}</h6>
           <audio controls>

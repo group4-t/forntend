@@ -33,7 +33,6 @@ const HomeItem = () => {
         </div>
       ) : (
         <h1>loading ...</h1>
-      
       )}
     </>
   );

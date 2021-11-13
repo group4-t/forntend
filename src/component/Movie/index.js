@@ -27,12 +27,6 @@ const Movie = () => {
         <div className="oneitemHome">
           <div className="blackBackgroundM"> h</div>
           <p className="movieP"> {movie.trackName}</p>
-          {/* <video width="320" height="240" controls>
-            {" "}
-            <source src={movie.trackViewUrl} type="video/mp4" />
-            {console.log(movie.trackViewUrl)}
-            Your browser does not support the video tag.
-          </video> */}
           <img src={movie.artworkUrl100} alt="" />
           <h6 className="hhh"> main character: {movie.artistName}</h6>
           <h5 className="h5space">g</h5>
