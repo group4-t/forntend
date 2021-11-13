@@ -3,7 +3,7 @@ import axios from "axios";
 import "./style.css";
 import { useNavigate } from "react-router-dom";
 // import { useHistory } from "react-router-dom";
-import { AiOutlineHeart } from 'react-icons/ai';
+import { AiOutlineHeart } from "react-icons/ai";
 const BASE_URL = "http://localhost:4000";
 
 function Movies() {
@@ -33,31 +33,30 @@ function Movies() {
       {movies.map((movie) => {
         return (
           <>
-          <div
-            onClick={() => {
-              goInside(movie.trackId);
-            }}
-            className="oneMovie"
-          >
-            <img src={movie.artworkUrl100} alt="movie" />
+            <div
+              onClick={() => {
+                goInside(movie.trackId);
+              }}
+              className="oneMovie"
+            >
+              <img src={movie.artworkUrl100} alt="movie" />
 
-            <h5> {movie.trackName} </h5>
+              <h5> {movie.trackName} </h5>
 
-            <div>
-              {/* <button
+              <div>
+                {/* <button
                 onClick={() => {
                   addFav(movie.trackId);
                 }}
               >
                 Add to Favorite
               </button>{" "} */}
+              </div>
             </div>
-          </div>
-          <p>
-          <AiOutlineHeart/></p>
+            {/* <p>
+          <AiOutlineHeart/></p> */}
           </>
         );
-        
       })}
     </div>
   );

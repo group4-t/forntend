@@ -29,9 +29,11 @@ const HomeItem = () => {
           <img src={topp.artworkUrl100} alt="" />
 
           <h6> by: {topp.artistName}</h6>
+          <h5 className="headSpa">g</h5>
         </div>
       ) : (
         <h1>loading ...</h1>
+      
       )}
     </>
   );
