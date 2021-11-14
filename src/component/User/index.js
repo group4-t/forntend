@@ -67,6 +67,7 @@ const User = () => {
                 );
                 console.log(users.length + 1);
                 createNew();
+                window.location.reload(false);
               }
             }}
           >
@@ -88,6 +89,7 @@ const User = () => {
               if (found) {
                 localStorage.setItem("userId", JSON.stringify(found.id));
                 console.log("your in ");
+                window.location.reload(false);
                 return <p>your in </p>;
               } else {
                 console.log("you dont have an account");
