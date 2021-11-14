@@ -37,6 +37,11 @@ const Nav = () => {
             Search
           </Link>
         </li>
+      {/* <  li className="lii">
+          <Link className="linkk" to="/user">
+            User
+          </Link>
+        </li> */}
       </ul>
     </div>
   );
