@@ -37,9 +37,15 @@ const Nav = () => {
             Search
           </Link>
         </li>
+        {/* <  li className="lii">
+          <Link className="linkk" to="/fav">
+            Favorite
+          </Link>
+        </li> */}
+
       <  li className="lii">
           <Link className="linkk" to="/user">
-            User
+            Account
           </Link>
         </li>
       </ul>
