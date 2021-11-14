@@ -3,14 +3,13 @@ import axios from "axios";
 
 import "./style.css";
 
-
-const BASE_URL = "http://localhost:4000";
+const BASE_URL = "https://backend-tw.herokuapp.com";
 
 const User = () => {
   const [users, setusers] = useState([]);
   const [AddinputSignvalue, setAddinputSignvalue] = useState("");
   const [AddinputLogvalue, setAddinputLogvalue] = useState("");
-  const [text, setText] = useState('Welcome');
+  const [text, setText] = useState("Welcome");
 
   useEffect(() => {
     getAllUsers();
@@ -43,7 +42,7 @@ const User = () => {
 
   return (
     <>
-     <p className="change">  {text} </p> 
+      <p className="change"> {text} </p>
       {userId ? (
         <form onSubmit={logOut}>
           <button className="userBtnL"> log out </button>
@@ -65,8 +64,10 @@ const User = () => {
                       {/* {console.log(
                         "This username already have an account! log in or change your username"
                       )} */}
-                    {/* {text} */}
-                    {setText("This username already have an account! log in or change your username")}
+                      {/* {text} */}
+                      {setText(
+                        "This username already have an account! log in or change your username"
+                      )}
                     </p>
                   );
                 } else {
@@ -107,7 +108,9 @@ const User = () => {
                 } else {
                   console.log("you dont have an account");
                   // return <p>you don't have an acount!, sign up </p>;
-                  {setText("you don't have an acount, sign up and join us")}
+                  {
+                    setText("you don't have an acount, sign up and join us");
+                  }
                 }
               }}
             >

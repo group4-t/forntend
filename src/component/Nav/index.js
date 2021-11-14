@@ -43,7 +43,7 @@ const Nav = () => {
           </Link>
         </li> */}
 
-      <  li className="lii">
+        <li className="lii">
           <Link className="linkk" to="/user">
             Account
           </Link>

@@ -4,7 +4,7 @@ import axios from "axios";
 import "./style.css";
 import { useEffect } from "react";
 
-const BASE_URL = "http://localhost:4000";
+const BASE_URL = "https://backend-tw.herokuapp.com";
 
 const OnePodcast = () => {
   const id = useParams().trackId;
@@ -12,7 +12,6 @@ const OnePodcast = () => {
   const [user, setuser] = useState(null);
   const [userId, setuserId] = useState("");
   const [text, setText] = useState("Add to Favorite");
-
 
   const getAllUsers = async () => {
     const users = await axios.get(`${BASE_URL}/users`);
@@ -40,10 +39,6 @@ const OnePodcast = () => {
     getPodcast();
     getAllUsers();
   }, []);
-
-
-
-
 
   const addFav = (id) => {
     if (userId) {
@@ -89,8 +84,6 @@ const OnePodcast = () => {
       console.log("you need to sign up or log in first ");
     }
   };
-
-
 
   return (
     <>
