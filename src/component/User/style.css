@@ -19,17 +19,17 @@
   padding: 5px;
   border-radius: 5px;
   border-style: none;
-  border: 1px solid rgb(0, 0, 0);
+  border: 0.5px solid rgb(143, 143, 143);
 }
 
 .contenerB {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.424);
+  background-color: rgba(255, 255, 255, 0.123);
   margin: 0% 30%;
-  margin-top: 120px;
-  margin-bottom: 12.6%;
+  margin-top: 30px;
+  margin-bottom: 13.7%;
   border-radius: 10px;
   padding: 10%;
   text-align: center;
@@ -39,4 +39,25 @@
 
 .firstDiv {
   margin-bottom: 50px;
+}
+
+
+.change{
+  margin-top: 40px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.userBtnL{
+  border-style: none;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 3px;
+  padding: 5px;
+  color: white;
+  background-color: black;
+  font-size: 20px;
+  margin-top: 100px;
+  margin-left: 48%;
+  margin-bottom: 496px;
 }
