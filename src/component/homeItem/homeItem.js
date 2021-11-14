@@ -4,7 +4,7 @@ import axios from "axios";
 import "./style.css";
 import { useEffect } from "react";
 
-const BASE_URL = "http://localhost:4000";
+const BASE_URL = "https://backend-tw.herokuapp.com";
 
 const HomeItem = () => {
   const id = useParams().trackId;
@@ -13,7 +13,6 @@ const HomeItem = () => {
   const [user, setuser] = useState(null);
   const [userId, setuserId] = useState("");
   const [text, setText] = useState("Add to Favorite");
-
 
   const getAllUsers = async () => {
     const users = await axios.get(`${BASE_URL}/users`);
@@ -41,8 +40,6 @@ const HomeItem = () => {
     getAllItem();
     getAllUsers();
   }, []);
-
-
 
   const addFav = (id) => {
     if (userId) {
@@ -89,9 +86,6 @@ const HomeItem = () => {
     }
   };
 
-
-
-
   return (
     <>
       {topp ? (
@@ -99,7 +93,6 @@ const HomeItem = () => {
           <div className="blackBackground"> h</div>
           <p className="homeP"> {topp.trackName}</p>
           <img src={topp.artworkUrl100} alt="" />
-
           <h6> by: {topp.artistName}</h6>
           <button
             className="addFavBtn"

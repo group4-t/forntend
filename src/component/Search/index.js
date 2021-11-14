@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "./style.css";
-const BASE_URL = "http://localhost:4000";
+const BASE_URL = "https://backend-tw.herokuapp.com";
 
 function Search() {
   const [searchResult, setsearchResultt] = useState([]);

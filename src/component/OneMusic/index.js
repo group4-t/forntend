@@ -4,7 +4,7 @@ import axios from "axios";
 import "./style.css";
 import { useEffect } from "react";
 
-const BASE_URL = "http://localhost:4000";
+const BASE_URL = "https://backend-tw.herokuapp.com";
 
 const OneMusic = () => {
   const id = useParams().trackId;
@@ -12,7 +12,6 @@ const OneMusic = () => {
   const [user, setuser] = useState(null);
   const [userId, setuserId] = useState("");
   const [text, setText] = useState("Add to Favorite");
-
 
   const getAllUsers = async () => {
     const users = await axios.get(`${BASE_URL}/users`);
@@ -40,11 +39,6 @@ const OneMusic = () => {
     getOneMusic();
     getAllUsers();
   }, []);
-
-
-
-
-
 
   const addFav = (id) => {
     if (userId) {
@@ -98,12 +92,13 @@ const OneMusic = () => {
           <p className="musicP"> {onemusic.trackName}</p>
           <img src={onemusic.artworkUrl100} alt="movie" />
           <h6> by: {onemusic.artistName}</h6>
-          <button className="addFavBtnMu"
+          <button
+            className="addFavBtnMu"
             onClick={() => {
               addFav(onemusic.trackId);
             }}
           >
-             {text}
+            {text}
           </button>{" "}
           {/* <audio controls>
             <source src={onemusic.previewUrl} type="audio/x-m4a" />

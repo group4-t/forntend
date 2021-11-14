@@ -10,7 +10,7 @@
 .nav {
   display: flex;
   justify-content: space-between;
-  border-bottom:0.5px solid rgba(175, 175, 175, 0.239); 
+  border-bottom: 0.5px solid rgba(175, 175, 175, 0.239);
 }
 
 h1 {

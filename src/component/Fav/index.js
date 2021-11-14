@@ -2,44 +2,42 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./style.css";
 
-const BASE_URL = "http://localhost:4000";
+const BASE_URL = "https://backend-tw.herokuapp.com";
 const Fav = () => {
-const [users, setusers] = useState([]);
-const [fav, setfav] = useState([]);
-const [all, setall] = useState([]);
+  const [users, setusers] = useState([]);
+  const [fav, setfav] = useState([]);
+  const [all, setall] = useState([]);
 
-useEffect(() => {
+  useEffect(() => {
     getAllUsers();
     getAllItem();
   }, []);
 
-
-
   const getAllItem = async () => {
     const users = await axios.get(`${BASE_URL}/all`);
-    setall(users.data);}
+    setall(users.data);
+  };
 
   const getAllUsers = async () => {
     const users = await axios.get(`${BASE_URL}/users`);
     setusers(users.data);
     let userid = JSON.parse(localStorage.getItem("userId"));
     if (userid) {
-        let loginUser = users.data.find((ele) => {
-          return ele.id == userid;  });
-        //   setuser(loginUser);
-        //   setuserId(userid);
-          setfav(loginUser.Fav)
-   
-  };}
+      let loginUser = users.data.find((ele) => {
+        return ele.id == userid;
+      });
+      //   setuser(loginUser);
+      //   setuserId(userid);
+      setfav(loginUser.Fav);
+    }
+  };
 
-
-
-return (
+  return (
     <div className="allMovies">
-       {all.map((eleall) =>{
-    let gg=  fav.filter(movie => movie.id == eleall.trackId)
+      {all.map((eleall) => {
+        let gg = fav.filter((movie) => movie.id == eleall.trackId);
 
-          console.log(gg);
+        console.log(gg);
 
         // return (
         //   <>
@@ -54,7 +52,7 @@ return (
         //       <h5> {gg.trackName} </h5>
 
         //       <div>
-                
+
         //       </div>
         //     </div>
         //   </>
@@ -62,6 +60,6 @@ return (
       })}
     </div>
   );
-}
+};
 
 export default Fav;
