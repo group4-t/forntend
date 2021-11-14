@@ -52,8 +52,13 @@ function Movies() {
               </button>{" "} */}
               </div>
             </div>
-            {/* <p>
-          <AiOutlineHeart/></p> */}
+              {/* <button
+                onClick={() => {
+                  addFav(movie.trackId);
+                }}
+              >
+                Add to Favorite
+              </button>{" "} */}
           </>
         );
       })}

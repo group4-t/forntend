@@ -2,11 +2,16 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 import "./style.css";
-const BASE_URL = "https://backend-tw.herokuapp.com";
+
+
+const BASE_URL = "http://localhost:4000";
+
 const User = () => {
   const [users, setusers] = useState([]);
   const [AddinputSignvalue, setAddinputSignvalue] = useState("");
   const [AddinputLogvalue, setAddinputLogvalue] = useState("");
+  const [text, setText] = useState('Welcome');
+
   useEffect(() => {
     getAllUsers();
   }, []);
@@ -38,9 +43,10 @@ const User = () => {
 
   return (
     <>
+     <p className="change">  {text} </p> 
       {userId ? (
         <form onSubmit={logOut}>
-          <button className="userBtn"> log out </button>
+          <button className="userBtnL"> log out </button>
         </form>
       ) : (
         <div className="contenerB">
@@ -56,11 +62,11 @@ const User = () => {
                   console.log(found);
                   return (
                     <p className="accountText">
-                      {console.log(
-                        "you already have an account! log in or change your username"
-                      )}
-                      you already have an account! log in or change your
-                      username{" "}
+                      {/* {console.log(
+                        "This username already have an account! log in or change your username"
+                      )} */}
+                    {/* {text} */}
+                    {setText("This username already have an account! log in or change your username")}
                     </p>
                   );
                 } else {
@@ -100,7 +106,8 @@ const User = () => {
                   return <p>your in </p>;
                 } else {
                   console.log("you dont have an account");
-                  return <p>you don't have an acount!, sign up </p>;
+                  // return <p>you don't have an acount!, sign up </p>;
+                  {setText("you don't have an acount, sign up and join us")}
                 }
               }}
             >
