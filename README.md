@@ -1,6 +1,6 @@
 # SkyTunes Project
 
-Here the link of project in Heroku [Take a look](https://frontend-twaiq.herokuapp.com/) ..  
+Here the link of project in Heroku [Take a look](https://frontend-twaiq.herokuapp.com) ..  
 iToun is A project that emulates the popular iTunes app .
 and it is a media player, media library, Internet radio broadcaster, mobile device management utility, and the client app for the iTunes Store, developed by Apple Inc. And as well as play content with the use of dynamic, smart playlists.
 
